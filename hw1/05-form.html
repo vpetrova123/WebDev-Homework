@@ -11,8 +11,41 @@
   <body>
     <main>
       <form action="">
-        <h1>Contact Form</h1>
-        <!-- Add your code here -->
+        <h1>Registration Form</h1>
+        <div>
+          <label for="username">Username: </label>
+          <input type="text" id="username" name="username" />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <br />
+        <div>
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <div>
+            <input type="radio" id="yes" name="choice" value="yes" />
+            <label for="yes">Yes, sign me up</label>
+            <input type="radio" id="no" name="choice" value="no" />
+            <label for="no">No, thank you</label>
+          </div>
+        </fieldset>
+        <br />
+        <div>
+          <label for="date">Date: </label>
+          <input type="date" id="date" name="date" value="date" />
+        </div>
+        <br />
+        <div>
+          <input type="submit" name="submit" value="Submit" />
+          <input type="reset" name="reset" value="Reset" />
+        </div>
       </form>
     </main>
   </body>
