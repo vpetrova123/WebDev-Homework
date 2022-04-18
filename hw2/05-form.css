@@ -1,14 +1,95 @@
 .form {
+  width: 400px;
+  height: 600px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form h1 {
+  text-align: center;
+}
+
+.form h1 span::before {
+  content: "\A";
+  white-space: pre;
 }
 
 .form-element {
+  border: 0;
+  padding: 0;
 }
 
-.btn {
+.username input {
+  width: 71%;
+  margin-left: 6px;
+  margin-bottom: 35px;
+}
+
+.email input {
+  width: 71%;
+  margin-left: 45px;
+  margin-bottom: 35px;
+}
+
+.password input {
+  width: 71%;
+  margin-left: 9px;
+  margin-bottom: 35px;
+}
+
+.date input {
+  width: 71%;
+  margin-left: 54px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.username,
+.email,
+.password,
+.date,
+.field legend {
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
 .btn-primary {
+  background-color: var(--green);
+  border: 1px solid var(--black);
+  color: var(--white);
+  border-radius: 2px;
+  width: 49%;
+  padding: 8px;
+}
+
+.btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--black);
 }
 
 .btn-secondary {
+  background-color: var(--white);
+  border: 1px solid var(--green);
+  color: var(--green);
+  border-radius: 2px;
+  width: 49%;
+  padding: 8px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+#yes,
+#no {
+  margin-left: 15px;
+}
+
+.label {
+  margin-left: 6px;
 }

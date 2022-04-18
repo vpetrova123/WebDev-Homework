@@ -1,3 +1,23 @@
 .container {
   width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+.vp-image {
+  max-width: 100%;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.vp-image img {
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+.description:first-line {
+  font-weight: bold;
 }

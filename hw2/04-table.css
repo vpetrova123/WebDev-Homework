@@ -3,9 +3,28 @@
 }
 
 .table-heading {
-  /* use the custom properties green and white for the colors - these colors are defined in the styles.css file */
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--black);
+  padding: 15px;
 }
 
 .channel {
-  /* use the custom properties orange and black for the colors - these colors are defined in the styles.css file */
+  background-color: var(--orange);
+  padding: 15px;
+  border: 1px solid var(--black);
+}
+
+.channel ~ td {
+  border: 1px solid var(--black);
+  padding: 15px;
+}
+
+#table {
+  table-layout: fixed;
+  width: 80%;
+}
+
+#table tr:hover {
+  background-color: var(--lightorange);
 }
