@@ -3,19 +3,185 @@ h1 {
 }
 
 /* Code for exercise 01-flex */
+.flex-container-1 {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: right;
+}
+
+.flex-container-1 .item1 {
+  order: 3;
+}
+
+.flex-container-1 .item2 {
+  order: 4;
+}
+
+.flex-container-1 .item3 {
+  order: 5;
+}
+
+.flex-container-1 .item4 {
+  order: 2;
+}
+
+.flex-container-1 .item5 {
+  order: 6;
+}
+
+.flex-container-1 .item6 {
+  order: 7;
+}
+
+.flex-container-1 .item7 {
+  order: 1;
+}
+
+.flex-container-1 .item8 {
+  order: 8;
+}
 
 /* Code for exercise 02-flex */
-
 .flex-container-2 {
+  display: flex;
+  margin-top: 50px;
   height: 400px;
+  flex-flow: column-reverse wrap;
+  align-content: space-around;
 }
 
 /* Code for exercise 03-grid */
+.grid-container-1 {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.grid-container-1 .item1 {
+  order: 2;
+}
+
+.grid-container-1 .item2 {
+  order: 3;
+  grid-row: span 4;
+  grid-column: span 2;
+}
+
+.grid-container-1 .item3 {
+  order: 4;
+}
+
+.grid-container-1 .item4 {
+  order: 5;
+  grid-row: span 3;
+}
+
+.grid-container-1 .item5 {
+  order: 6;
+  grid-row: span 3;
+}
+
+.grid-container-1 .item6 {
+  order: 7;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-container-1 .item7 {
+  order: 1;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+
+.grid-container-1 .item8 {
+  order: 8;
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 /* Code for exercise 04-grid */
+.grid-container-2 .item1 {
+  grid-area: header;
+}
+.grid-container-2 .item2 {
+  grid-area: jumbotron;
+}
+
+.grid-container-2 .item3 {
+  grid-area: card1;
+}
+
+.grid-container-2 .item4 {
+  grid-area: card2;
+}
+
+.grid-container-2 .item5 {
+  grid-area: card3;
+}
+
+.grid-container-2 .item6 {
+  grid-area: section;
+}
+
+.grid-container-2 .item7 {
+  grid-area: footer;
+}
+
+.grid-container-2 {
+  display: grid;
+  gap: 5px;
+  font-size: smaller;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header"
+    "jumbotron"
+    "section"
+    "card1"
+    "card2"
+    "footer";
+}
+
+@media (max-width: 1023px) {
+  .grid-container-2 .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container-2 {
+    display: grid;
+    gap: 5px;
+    font-size: smaller;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "jumbotron jumbotron"
+      "section section"
+      "card1 card2"
+      "footer footer";
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container-2 {
+    display: grid;
+    gap: 5px;
+    font-size: smaller;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "jumbotron jumbotron jumbotron"
+      "card1 card2 card3"
+      "section section section"
+      "footer footer footer";
+  }
+}
 
 /* Code for exercise 05-bootstrap-grid */
-
 .bootstrap-grid .row > * {
   height: 100px;
   border: 1px solid var(--white);
