@@ -1,8 +1,22 @@
-const getPrimes = () => {
-  // Add your code here
+const getPrimes = (input) => {
+  if (input == 1 || input == 0) {
+    return false;
+  }
+  for (let i = 2; i < input; i++) {
+    if (input % i == 0) {
+      return false;
+    }
+  }
+  return true;
 };
 
-getPrimes();
+let flag = false;
+for (let i = 1; i <= 100; i++) {
+  flag = getPrimes(i);
+  if (flag == true) {
+    console.log(i);
+  }
+}
 // 2
 // 3
 // 5
