@@ -9,7 +9,7 @@ function handleSubmit(event) {
     return;
   }
 
-  console.log("===========FORM SUBMITION===========");
+  console.log("===========FORM SUBMISSION===========");
   if (form.elements.username.value != "") {
     console.log("Username: " + form.elements.username.value);
   } else {
