@@ -12,3 +12,9 @@
   background-color: var(--purple);
   color: var(--white);
 }
+
+#results {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
